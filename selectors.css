@@ -1,0 +1,61 @@
+/* ======================================================
+   OEFENEN MET CSS SELECTORS
+========================================================= */
+
+/* 1.1 Geef de 'img' tag in the header een ID en zet zijn breedte op 100% */
+#banaan2 {
+    width: 100%;
+}
+
+
+/* 1.2 Verander de kleur van alle list items in de unordered list naar hsl(110, 29%, 52%) */
+ul {
+    color: hsl(110, 29%, 52%);
+}
+
+
+/* 1.3 Geef de 'span' tag in de footer een beschrijvende class name en maak de lettergrootte kleiner  */
+.tuttiblog {
+    font-size: 50%;
+}
+
+
+/* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
+
+header a:link{
+     color: hsl(359, 79%, 56%);
+     text-decoration: none;
+ }
+header a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+  }
+
+
+/* 1.5 Maak een hover- en visited stijl voor alle links in 'main'. */
+main a:hover    {
+    color: yellow;
+}
+
+main p a:visited {
+    color: green;
+
+}
+
+/* Verander de achtergrond van de SignUp button. Tip: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors  */
+input[type=submit] {
+    background-color: blue;
+}
+
+/* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
+input[type="text"]:focus {
+    outline-color: blue;
+}
+
+
+/* Target alle heading tags op de pagina en zet hun font-family op 'Bree Serif', serif */
+h1, h2, h3 {
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+    font-family: 'Bree Serif', serif;
+}
+
